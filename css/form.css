@@ -36,6 +36,7 @@ input, button, select {
     border-radius: 5px;
     box-shadow: 1px 0px 10px transparent;
     transition: box-shadow .5s;
+    background: #ffffff;
 }
 
 .master-form-group input::placeholder {

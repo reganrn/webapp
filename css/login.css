@@ -1,0 +1,29 @@
+.master-crm-login {
+    background: #E8EBF7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.master-login-page {
+    width: 520px;
+    background: #ffffff;
+    padding: 42px 54px;
+    border-radius: 32px;
+    box-shadow: 1px 0px 50px #cccccc;
+}
+
+.master-crm-login h2 {
+    text-align: center;
+    color: #555555;
+    font-size: 32px;
+    font-size: 800;
+    padding-bottom: 16px;
+}
+
+.master-login-page .master-form-group input {
+    padding: 14px 16px;
+    font-size: 16px;
+}

@@ -3,14 +3,32 @@ $( ".dateofbirth" ).datepicker();
 feather.replace()
 
 $(function(){
+
+    // Select box
     $('select').on('click', function(){
         if($(this).val() == "0"){
             $(this).removeClass('changeval')
         }else{
             $(this).addClass('changeval')
         }
+    });
+
+    // Menu click 
+
+    $('.mobile-menu').click(function(e){
+      e.stopPropagation();
+      $(this).toggleClass('active');
+      $('.master-menu').toggleClass('active');
+    });
+
+    $(document).click(function(){
+      $('.mobile-menu').removeClass('active');
+      $('.master-menu').removeClass('active');
     })
+
 });
+
+
 
 
 // file upload

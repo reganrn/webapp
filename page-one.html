@@ -31,9 +31,12 @@
             <div class="master-menu">
                 <div class="master-menu-list">
                     <ul>
-                        <li><a href="javascript:;">Font office</a></li>
-                        <li><a href="javascript:;">Rooms</a></li>
-                        <li><a href="javascript:;">Report</a></li>
+                        <li><a href="javascript:;"> <i data-feather="layers"></i> Dashboard</a></li>
+                        <li><a href="javascript:;"> <i data-feather="trello"></i> Front office</a></li>
+                        <li><a href="javascript:;"> <i data-feather="calendar"></i> Reservation</a></li>
+                        <li><a href="javascript:;"> <i data-feather="dollar-sign"></i> Billing</a></li>
+                        <li><a href="javascript:;"> <i data-feather="file-text"></i> Reports</a></li>
+                        <li><a href="javascript:;"> <i data-feather="user"></i> User panel</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,22 +49,26 @@
                 </div>
                 <div class="master-form-col">
                     <div class="master-form-col-inner">
-                        <div class="master-form-group">
-                            <label>Salutations</label>
-                            <select>
-                                <option value="0">Select</option>
-                                <option value="Mr">Mr</option>
-                                <option value="Mrs">Mrs</option>                                
-                                <option value="Dr">Dr</option>                                
-                                <option value="Prof">Prof</option>                                
-                                <option value="Rev">Rev</option>                                
-                            </select>
-                        </div>
-                    </div>
-                    <div class="master-form-col-inner">
-                        <div class="master-form-group">
-                            <label>Full name</label>
-                            <input type="text" placeholder="Enter full name">
+                        <div class="master-form-col-split">
+                            <div class="master-form-col-sm">
+                                <div class="master-form-group">
+                                    <label>Salutations</label>
+                                    <select>
+                                        <option value="0">Select</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>                                
+                                        <option value="Dr">Dr</option>                                
+                                        <option value="Prof">Prof</option>                                
+                                        <option value="Rev">Rev</option>                                
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="master-form-col-lg">
+                                <div class="master-form-group">
+                                    <label>Full name</label>
+                                    <input type="text" placeholder="Enter full name">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="master-form-col-inner">
@@ -90,14 +97,14 @@
                     </div>
                     <div class="master-form-col-inner">
                         <div class="master-form-group">
-                            <label>GST no</label>
-                            <input type="text" placeholder="Enter Address">
+                            <label>GST number</label>
+                            <input type="text" placeholder="Enter GST number">
                         </div>
                     </div>
                     <div class="master-form-col-inner">
                         <div class="master-form-group">
                             <label>Photo</label>
-                            <input type="file" placeholder="Enter Address">
+                            <input type="file" id="file" >
                         </div>
                     </div>
                     <div class="master-form-col-inner">
@@ -107,21 +114,25 @@
                         </div>
                     </div>
                     <div class="master-form-col-inner">
-                        <div class="master-form-group">
-                            <label>Proof ID</label>
-                            <select>
-                                <option value="0">Select</option>
-                                <option value="Voter ID">Voter ID</option>
-                                <option value="Cadhar card">Cadhar card</option>                                
-                                <option value="Driving licence">Driving licence</option>                                
-                                <option value="Passport">Passport</option>                          
-                            </select>
-                        </div>
-                    </div>
-                    <div class="master-form-col-inner">
-                        <div class="master-form-group">
-                            <label>Proof of number</label>
-                            <input type="text" placeholder="Enter proof of number">
+                        <div class="master-form-col-split">
+                            <div class="master-form-col-sm">
+                                <div class="master-form-group">
+                                    <label>Proof ID</label>
+                                    <select>
+                                        <option value="0">Select</option>
+                                        <option value="Voter ID">Voter ID</option>
+                                        <option value="Aadhar card">Aadhar ID</option>                                
+                                        <option value="Driving licence">DL</option>                                
+                                        <option value="Passport">Passport</option>                          
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="master-form-col-lg">
+                                <div class="master-form-group">
+                                    <label>Proof of number</label>
+                                    <input type="text" placeholder="Enter proof of number">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="master-form-col-inner">
@@ -332,6 +343,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/main.js"></script>    
 </body>
 </html>

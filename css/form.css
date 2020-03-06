@@ -4,51 +4,73 @@ input, button, select {
     appearance: none;
 }
 
+.file-upload-wrapper {
+	position: relative;
+}
+
+.file-upload-button {
+	display: flex;
+    align-items: center;
+    background: #F1F1F1;
+    padding: 7px 15px;
+    position: absolute;
+    top: .5px;
+    right: 1px;
+    border-radius: 3px;
+    border: 0px;
+    border-left: 0px;
+    cursor: pointer;
+}
+
+.file-upload-button img {
+	width: 20px;
+	margin-right: 10px;
+}
+
 .master-form-group {
     padding: 8px 0px;
 }
 
-.master-form-title {
-    font-size: 18px;
-    color: #7D80DA;
-    background: #f1f1f1;
-    padding: 15px;
-    margin: 15px;
-    font-weight: 600;
-}
+
 
 .master-form-group label {
     color: #666666;
     font-weight: 600;
     font-size: 14px;
     display: block;
-    padding: 0px 0px 10px;
+    padding: 0px 0px 5px;
 }
 
 .master-form-group input, .master-form-group select {
     outline: none !important;
-    padding: 12px 14px;
+    padding: 8px 14px;
     width: 100%;
-    border: 1px solid #cccccc;
-    color: #111111;
+    border: 1px solid #d9d9d9;
+    color: #333333;
     font-weight: 700;
     font-size: 14px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 1px 0px 10px transparent;
     transition: box-shadow .5s;
     background: #ffffff;
 }
 
 .master-form-group select {
-    color: #cccccc;
+	color: #cccccc;
+	background: url(../images/select.svg) no-repeat;
+	background-position: 95%;
+	background-size: 20px;
 }
 
 .master-form-group select.changeval {
-    color: #111111;
+	color: #333333;
+	background: url(../images/select-active.svg) no-repeat;
+	background-position: 95%;
+	background-size: 20px;
 }
 
 .master-form-group select option:not(:first-of-type) {
-    color: #666666;
+	color: #666666;
   }
 
 .master-form-group input::placeholder {
@@ -58,7 +80,7 @@ input, button, select {
 
 
 .master-form-group input:focus, .master-form-group select:focus{
-    box-shadow: 1px 0px 10px #7D80DA;
+    border: 1px solid#7D80DA;
 }
 
 .master-cta {

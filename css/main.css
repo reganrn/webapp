@@ -305,4 +305,8 @@
     .master-rooms-col {
         flex: 0 1 100%;
     }
+
+    .master-rooms-web{
+        max-width: 100%;
+    }
 }

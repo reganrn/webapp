@@ -1,9 +1,8 @@
 .master-header {
-    background: #ffffff;
+    background: #343840;
     padding: 8px 15px;
     position: fixed;
     width: 100%;
-    box-shadow: 1px 1px 24px #eeeeee;
     z-index: 99;
     display: flex;
 }
@@ -23,7 +22,7 @@
 }
 
 .master-header-notification {
-    color: #e22e5f;
+    color: #f9c22e;
     position: relative;
     top: 6px;
     cursor: pointer;
@@ -38,7 +37,7 @@
 }
 
 .master-header-profile span {
-    background: #e22e5f;
+    background: #f9c22e;
     width: 45px;
     height: 45px;
     text-align: center;
@@ -46,7 +45,7 @@
     border-radius: 100%;
     line-height: 35px;
     cursor: pointer;
-    color: #ffffff;
+    color: #343840;
     position: relative;
     margin-left: 25px;
     margin-right: 25px;
@@ -59,7 +58,7 @@
     width: 20px;
     top: 13px;
     right: 0;
-    color: #343840;
+    color: #f9c22e;
 }
 
 .master-content {
@@ -70,13 +69,14 @@
     width: 260px;
     height: calc(100vh - 65px);
     position: fixed;
-    box-shadow: 1px 1px 24px #eeeeee;
+    /* box-shadow: 1px 1px 24px #eeeeee; */
     top: 65px;
     z-index: 9;
+    background: #f15946;
 }
 
 .master-menu-list ul li a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #343840;
     text-decoration: none;
@@ -84,7 +84,7 @@
     border-left: 5px solid transparent;
     background-color: transparent;
     transition: all .5s;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #343840;
     display: flex;
     align-items: center;
 }
@@ -95,9 +95,9 @@
 }
 
 .master-menu-list ul li a:hover{
-    color: #4453A7;
-    border-left: 5px solid #4453A7;
-    background-color: #f9f9f9;
+    color: #f15946;
+    border-left: 5px solid #f15946;
+    background-color: #343840;
 }
 
 .master-wall {
@@ -113,16 +113,17 @@
 }
 
 .master-page-title {
-    background:#ffffff;
+    background: #999999;;
     padding: 15px 15px;
-    color: #4453A7;
+    color: #ffffff;
     font-size: 21px;
-    font-weight: 600;    
+    font-weight: 600;
+    margin: 0px 0px 24px;
 }
 
 .master-form-title {
     font-size: 18px;
-    color: #343840;
+    color: #f15946;
     background: #fff9f9;
     padding: 10px 10px;
     font-weight: 600;
@@ -164,6 +165,9 @@
 
 .master-logo {
     display: inline-block;
+    color: #f9c22e;
+    font-weight: 900;
+    font-size: 36px;
 }
 
 
@@ -177,7 +181,7 @@
 }
 
 .master-rooms-col {
-    flex: 0 1 25%;
+    flex: 0 1 20%;
     padding: 20px 15px;
 }
 
@@ -189,28 +193,43 @@
 .master-rooms-web .master-rooms-web-count {
     width: 60px;
     height: 60px;
-    background: #EEE;
-    color: #343840;
+    background: #343840;
+    color: #eeeeee;
     font-size: 16px;
     font-weight: 700;
     border-radius: 100%;
     text-align: center;
     line-height: 60px;
     margin: auto;
-    position: absolute;
     top: -10px;
-    box-shadow: 1px 5px 1px #343840;
+    position: relative;
+}
+
+.master-rooms-web-count::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 96%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #343840;
+    clear: both;
 }
 
 .master-rooms-check {
     color: #ffffff;
-    padding: 15px 15px 15px 70px;
+    padding: 25px 15px 25px 15px;
     font-size: 14px;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 5px;
     letter-spacing: 1px;
     text-shadow: 1px 1px 5px #000;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* 343840-e22e5f-f15946-f9c22e-4453a7 */
@@ -252,6 +271,7 @@
         border-radius: 100%;
         padding: 0px 10px 0px 0px;
         cursor: pointer;
+        color: #ffffff;
     }
 
     .mobile-menu.active .menu-open{
@@ -264,7 +284,6 @@
     
 
     .master-menu{
-        background-color: #ffffff;
         left: -260px;
         transition: left .5s;
     }
@@ -276,18 +295,26 @@
     .master-wall{
         padding: 105px 0px 50px 0px;
     }
-
+WWW
     .master-rooms-col {
         flex: 0 1 33%;
     }
-
     
 }
 
 @media(max-width : 767px){
+
+    .master-menu{
+        top: 55px;
+    }
+
     .master-form-col-inner {
         flex: 0 1 50%;
         padding: 0px 15px;
+    }
+
+    .master-wall {
+        padding: 57px 0px 50px 0px;
     }
     
 
@@ -297,6 +324,15 @@
 }
 
 @media(max-width : 567px){
+
+    .master-header{
+        padding: 14px 15px;
+    }
+
+    .master-logo {
+        font-size: 23px;
+    }
+
     .master-form-col-inner {
         flex: 0 1 100%;
         padding: 0px 15px;

@@ -11,7 +11,7 @@ input, button, select {
 .file-upload-button {
 	display: flex;
     align-items: center;
-    background: #F1F1F1;
+    background: #fdbdb5;
     padding: 7px 15px;
     position: absolute;
     top: .5px;
@@ -45,7 +45,7 @@ input, button, select {
     outline: none !important;
     padding: 8px 14px;
     width: 100%;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #fdbdb5;
     color: #333333;
     font-weight: 700;
     font-size: 14px;
@@ -56,7 +56,7 @@ input, button, select {
 }
 
 .master-form-group select {
-	color: #cccccc;
+	color: #fdbdb5;
 	background: url(../images/select.svg) no-repeat;
 	background-position: 95%;
 	background-size: 20px;
@@ -74,13 +74,14 @@ input, button, select {
   }
 
 .master-form-group input::placeholder {
-    color: #cccccc;
+    color: #fdbdb5;
     font-weight: 500;
 }
 
 
 .master-form-group input:focus, .master-form-group select:focus{
-    border: 1px solid#7D80DA;
+	/* border: 1px solid#f15946; */
+	box-shadow: 1px 0px 10px #f9c22e;
 }
 
 .master-cta {

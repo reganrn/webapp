@@ -339,7 +339,7 @@ WWW
     }
 
     .master-rooms-col {
-        flex: 0 1 100%;
+        flex: 0 1 50%;
     }
 
     .master-rooms-web{

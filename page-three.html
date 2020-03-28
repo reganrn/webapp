@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/report.css">
+    <!-- https://coolors.co/343840-e22e5f-f15946-f9c22e-4453a7 -->
+</head>
+<body>
+    <div class="master-dashboard">
+        <!-- Header -->
+        <div class="master-header">
+            <div class="master-header-col">
+                <div class="mobile-menu">
+                    <i class="menu-open" data-feather="menu"></i>
+                    <i class="menu-close" data-feather="x"></i>
+                </div>
+                <div class="master-logo">
+                    MONK ERP
+                </div>
+            </div>
+            <div class="master-header-col">
+                <div class="master-header-web">
+                    <div class="master-header-notification">
+                        <i data-feather="bell"></i>
+                    </div>
+                    <div class="master-header-profile">
+                        <span>M</span> <i data-feather="chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+
+        <!-- content -->
+        <div class="master-content">
+            <div class="master-menu">
+                <div class="master-menu-list">
+                    <ul>
+                        <li><a href="javascript:;"> <i data-feather="layers"></i> Dashboard</a></li>
+                        <li><a href="javascript:;"> <i data-feather="trello"></i> Front office</a></li>
+                        <li><a href="javascript:;"> <i data-feather="calendar"></i> Reservation</a></li>
+                        <li><a href="javascript:;"> <i data-feather="dollar-sign"></i> Billing</a></li>
+                        <li><a href="javascript:;"> <i data-feather="file-text"></i> Reports</a></li>
+                        <li><a href="javascript:;"> <i data-feather="user"></i> User panel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="master-wall">
+                <div class="master-wall-inner">
+                    <!-- <div class="master-page-title">
+                            Reports
+                    </div> -->
+                    
+                    <div class="master-report-search">
+                        <div class="master-report-column-main">
+                            <div class="master-report-column">
+                                <div class="master-form-group-report">
+                                    <input class="report-from-date" type="text" placeholder="From date">
+                                </div>
+                            </div>
+                            <div class="master-report-column">
+                                <div class="master-form-group-report">
+                                    <input class="report-to-date" type="text" placeholder="To date">
+                                </div>
+                            </div>
+                            <div class="master-report-column">
+                                <div class="master-form-group-report">
+                                    <input class="small-buttom" type="submit" value="Search now">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="master-report-column-main">
+                            <a class="small-buttom-blue" href="javascript:;"><i data-feather="printer"></i> PRINT NOW</a>
+                        </div>
+                    </div>
+
+                    <div class="master-form-title">
+                        Checkout Reports
+                    </div>
+
+                    <div class="master-report-table">
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                            <tr class="master-report-table-heading">
+                                <td>No</td>
+                                <td>DATE</td>
+                                <td>BILL NO</td>
+                                <td>ROOM NO</td>
+                                <td>GUEST NAME</td>
+                                <td>AMOUNT</td>
+                                <td class="master-report-table-hide-mob">REFUND</td>
+                                <td class="master-report-table-hide-mob">CASH</td>
+                                <td class="master-report-table-hide-mob">CARD</td>
+                                <td class="master-report-table-hide-mob">CHEQUE</td>
+                                <td class="master-report-table-hide-mob">BANK</td>
+                                <td class="master-report-table-hide-mob">CREDIT</td>
+                                <td class="master-report-table-hide-mob">REMARKS</td>
+                                <td class="master-report-table-show-mob">View Report</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1001</td>
+                                <td>Muthuguru</td>
+                                <td>₹ 5000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 556000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 345000</td>
+                                <td class="master-report-table-hide-mob">No Comment</td>
+                                <td class="master-report-table-show-mob"><a href="javascript:;">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1002</td>
+                                <td>Regan</td>
+                                <td>₹ 5000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 556000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 45000</td>
+                                <td class="master-report-table-hide-mob">₹ 345000</td>
+                                <td class="master-report-table-hide-mob">No Comment</td>
+                                <td class="master-report-table-show-mob"><a href="javascript:;">View</a></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+
+                    <!-- Next -->
+                    <div class="master-form-title">
+                        Advance Reports
+                    </div>
+
+                    <div class="master-report-table">
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                            <tr class="master-report-table-heading">
+                                <td>No</td>
+                                <td>DATE</td>
+                                <td>ADVANCE CHECK IN DATE</td>
+                                <td>ROOM NO</td>
+                                <td>RECIPT NO</td>
+                                <td>ROOM NO</td>
+                                <td>NAME</td>
+                                <td>CASH</td>
+                                <td>CARD</td>
+                                <td>CHEQUE</td>
+                                <td>BANK</td>
+                                <td>TOTAL</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>30-03-2020</td>
+                                <td>30-03-202</td>
+                                <td>0011</td>
+                                <td>34324</td>
+                                <td>34234</td>
+                                <td>Regan</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                            </tr>                            
+                            <tr>
+                                <td>01</td>
+                                <td>30-03-2020</td>
+                                <td>30-03-202</td>
+                                <td>0011</td>
+                                <td>34324</td>
+                                <td>34234</td>
+                                <td>Regan</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                                <td>₹ 45000</td>
+                            </tr>                            
+                        </table>
+                    </div>
+                    <!-- Next -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/main.js"></script>    
+</body>
+</html>

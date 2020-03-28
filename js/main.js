@@ -1,4 +1,4 @@
-$( ".dateofbirth" ).datepicker();
+$( ".dateofbirth, .report-from-date, .report-to-date" ).datepicker();
 
 feather.replace()
 

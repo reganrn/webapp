@@ -10,8 +10,73 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/report.css">
     <!-- https://coolors.co/343840-e22e5f-f15946-f9c22e-4453a7 -->
+    <!-- http://www.myshort.in/on-click-open-dynamic-popup-div-modal-div-used-mysql-ajax-php/ -->
 </head>
 <body>
+
+    <!-- Checkout Reports -->
+    <div class="master-popup-main checkout-reports-popup">
+        <div class="master-report-popup-table master-popup">
+            <div class="master-popup-close">X</div>
+            <h2>Checkout Reports</h2>
+            <div class="master-popup-scroll">
+                <table width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>No</td>
+                        <td>:</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>DATE</td>
+                        <td>:</td>
+                        <td>29-03-2020</td>
+                    </tr>
+                    <tr>
+                        <td>BILL NO</td>
+                        <td>:</td>
+                        <td>29032020</td>
+                    </tr>
+                    <tr>
+                        <td>ROOM NO</td>
+                        <td>:</td>
+                        <td>1001</td>
+                    </tr>
+                    <tr>
+                        <td>GUEST NAME	</td>
+                        <td>:</td>
+                        <td>Muthuguru</td>
+                    </tr>
+                    <tr>
+                        <td>No</td>
+                        <td>:</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>DATE</td>
+                        <td>:</td>
+                        <td>29-03-2020</td>
+                    </tr>
+                    <tr>
+                        <td>BILL NO</td>
+                        <td>:</td>
+                        <td>29032020</td>
+                    </tr>
+                    <tr>
+                        <td>ROOM NO</td>
+                        <td>:</td>
+                        <td>1001</td>
+                    </tr>
+                    <tr>
+                        <td>GUEST NAME	</td>
+                        <td>:</td>
+                        <td>Muthuguru</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Checkout Reports -->
+
     <div class="master-dashboard">
         <!-- Header -->
         <div class="master-header">
@@ -91,50 +156,29 @@
                                 <td>DATE</td>
                                 <td>BILL NO</td>
                                 <td>ROOM NO</td>
-                                <td>GUEST NAME</td>
-                                <td>AMOUNT</td>
-                                <td class="master-report-table-hide-mob">REFUND</td>
-                                <td class="master-report-table-hide-mob">CASH</td>
-                                <td class="master-report-table-hide-mob">CARD</td>
-                                <td class="master-report-table-hide-mob">CHEQUE</td>
-                                <td class="master-report-table-hide-mob">BANK</td>
-                                <td class="master-report-table-hide-mob">CREDIT</td>
-                                <td class="master-report-table-hide-mob">REMARKS</td>
-                                <td class="master-report-table-show-mob">View Report</td>
+                                <td class="master-report-table-mob-hide">GUEST NAME</td>
+                                <td class="master-report-table-mob-hide">AMOUNT</td>
+                                <td>View Report</td>
                             </tr>
                             <tr>
                                 <td>01</td>
                                 <td>29-03-2020</td>
                                 <td>29032020</td>
                                 <td>1001</td>
-                                <td>Muthuguru</td>
-                                <td>₹ 5000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 556000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 345000</td>
-                                <td class="master-report-table-hide-mob">No Comment</td>
-                                <td class="master-report-table-show-mob"><a href="javascript:;">View</a></td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
+                                
                             </tr>
                             <tr>
                                 <td>02</td>
                                 <td>29-03-2020</td>
                                 <td>29032020</td>
-                                <td>1002</td>
-                                <td>Regan</td>
-                                <td>₹ 5000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 556000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 45000</td>
-                                <td class="master-report-table-hide-mob">₹ 345000</td>
-                                <td class="master-report-table-hide-mob">No Comment</td>
-                                <td class="master-report-table-show-mob"><a href="javascript:;">View</a></td>
+                                <td>1001</td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
                             </tr>
-                            
                         </table>
                     </div>
 
@@ -148,48 +192,118 @@
                             <tr class="master-report-table-heading">
                                 <td>No</td>
                                 <td>DATE</td>
-                                <td>ADVANCE CHECK IN DATE</td>
+                                <td>BILL NO</td>
                                 <td>ROOM NO</td>
-                                <td>RECIPT NO</td>
-                                <td>ROOM NO</td>
-                                <td>NAME</td>
-                                <td>CASH</td>
-                                <td>CARD</td>
-                                <td>CHEQUE</td>
-                                <td>BANK</td>
-                                <td>TOTAL</td>
+                                <td class="master-report-table-mob-hide">GUEST NAME</td>
+                                <td class="master-report-table-mob-hide">AMOUNT</td>
+                                <td>View Report</td>
                             </tr>
                             <tr>
                                 <td>01</td>
-                                <td>30-03-2020</td>
-                                <td>30-03-202</td>
-                                <td>0011</td>
-                                <td>34324</td>
-                                <td>34234</td>
-                                <td>Regan</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                            </tr>                            
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1001</td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
+                                
+                            </tr>
                             <tr>
-                                <td>01</td>
-                                <td>30-03-2020</td>
-                                <td>30-03-202</td>
-                                <td>0011</td>
-                                <td>34324</td>
-                                <td>34234</td>
-                                <td>Regan</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                                <td>₹ 45000</td>
-                            </tr>                            
+                                <td>02</td>
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1001</td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
+                            </tr>
                         </table>
                     </div>
                     <!-- Next -->
+
+                    <!-- Next -->
+                    <div class="master-form-title">
+                        Other collection reports
+                    </div>
+
+                    <div class="master-report-table">
+                        <table width="100%" cellspacing="0" cellpadding="0">
+                            <tr class="master-report-table-heading">
+                                <td>No</td>
+                                <td>DATE</td>
+                                <td>BILL NO</td>
+                                <td>ROOM NO</td>
+                                <td class="master-report-table-mob-hide">GUEST NAME</td>
+                                <td class="master-report-table-mob-hide">AMOUNT</td>
+                                <td>View Report</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1001</td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>29-03-2020</td>
+                                <td>29032020</td>
+                                <td>1001</td>
+                                <td class="master-report-table-mob-hide">Muthuguru</td>
+                                <td class="master-report-table-mob-hide">₹ 5000</td>
+                                <td class="master-report-cta"><a href="javascript:;" class="checkout-reports">View</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Next -->
+
+                    <div class="master-report-table master-report-total">
+                        <!-- Next -->
+                        <div class="master-form-title">
+                            Other collection reports
+                        </div>
+
+                        <div class="master-report-table">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Cash</td>
+                                    <td>:</td>
+                                    <td>₹29032020</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Next -->
+                    </div>
+
+                    
                     
                 </div>
             </div>

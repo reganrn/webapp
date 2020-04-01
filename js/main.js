@@ -26,6 +26,18 @@ $(function(){
       $('.master-menu').removeClass('active');
     })
 
+
+    // Popup 
+
+    $('.checkout-reports').click(function(){
+        $('.checkout-reports-popup').fadeIn();
+    });
+
+    $('.master-popup-close').click(function(){
+      $('.master-popup-main').fadeOut();
+    })
+
+
 });
 
 

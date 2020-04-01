@@ -109,8 +109,27 @@ input.small-buttom, a.small-buttom-blue{
     background-color: #f9f9f9;
 }
 
-.master-report-table-show-mob{
-    display: none;
+.master-report-cta a{
+    background: #343840;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 50px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.master-report-total {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #fbc9c3;
+  
+}
+
+.master-report-total .master-report-table{
+    margin-bottom: 0px;
 }
 
 
@@ -125,17 +144,7 @@ input.small-buttom, a.small-buttom-blue{
         text-align: center;
     }
 
-    .master-report-table-show-mob a{
-        background: #343840;
-        padding: 2px 10px;
-        display: inline-block;
-        border-radius: 50px;
-        color: #FFF;
-        font-weight: 600;
-        font-size: 12px;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
+    
 }
 
 
@@ -143,6 +152,16 @@ input.small-buttom, a.small-buttom-blue{
 
 
 @media(max-width : 767px){
+
+    .master-report-table{
+        padding: 0 15px;
+    }
+
+    .master-form-title{
+        padding: 10px 15px;
+    }
+
+
     .master-report-search{
         margin: 10px 0px 24px;
         display: block;
@@ -160,6 +179,10 @@ input.small-buttom, a.small-buttom-blue{
     .master-report-column-main:last-child{
         text-align: center;
         padding: 15px 0px 0px;
+    }
+
+    .master-report-table-mob-hide{
+        display: none;
     }
     
 }
@@ -190,6 +213,10 @@ input.small-buttom, a.small-buttom-blue{
     input.small-buttom{
         max-width: 200px;
         margin:auto;
+    }
+
+    .master-report-total {
+        width: 90%;
     }
 
 }

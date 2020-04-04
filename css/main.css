@@ -34,6 +34,7 @@
 
 .master-header-profile {
     cursor: pointer;
+    position: relative;
 }
 
 .master-header-profile span {
@@ -59,6 +60,45 @@
     top: 13px;
     right: 0;
     color: #f9c22e;
+}
+
+.master-header-profile-dropdown {
+    position: absolute;
+    background: #FFF;
+    box-shadow: 1px 1px 10px #999999;
+    border-radius: 2px;
+    width: 250px;
+    right: 0px;
+    padding: 15px 0px;
+    top: 56px;
+    display: none;
+}
+
+.master-header-profile-dropdown::after{
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #FFFF;
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 30px;
+}
+
+.master-header-profile-dropdown ul li a {
+    padding: 5px 15px;
+    display: flex;
+    border-bottom: 1px solid #F1F1F1;
+    align-items: center;
+}
+
+.master-header-profile-dropdown ul li a svg {
+    position: relative;
+    top: auto;
+    margin-right: 10px;
+    color: #333333;
 }
 
 .master-content {

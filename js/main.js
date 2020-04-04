@@ -4,6 +4,13 @@ feather.replace()
 
 $(function(){
 
+
+  // Header dropdown
+
+  $('.master-header-profile-click').click(function(){
+      $('.master-header-profile-dropdown').slideToggle();
+  })
+
     // Select box
     $('select').on('click', function(){
         if($(this).val() == "0"){

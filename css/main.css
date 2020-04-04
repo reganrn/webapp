@@ -295,7 +295,9 @@
     .master-wall{
         padding: 105px 0px 50px 0px;
     }
-WWW
+    .wall-padding{
+        padding: 0 15px;
+    }
     .master-rooms-col {
         flex: 0 1 33%;
     }

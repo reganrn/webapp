@@ -1,7 +1,7 @@
 .master-report-search {
     display: flex;
     /* background: #f9f9f9; */
-    padding: 15px 15px;
+    /* padding: 15px 15px; */
     margin: 0px 0px 24px;
 }
 
@@ -142,23 +142,18 @@ input.small-buttom, a.small-buttom-blue{
         display: inline-block;
         width: 100%;
         text-align: center;
-    }
-
-    
+    } 
 }
-
-
-
 
 
 @media(max-width : 767px){
 
     .master-report-table{
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
 
     .master-form-title{
-        padding: 10px 15px;
+        padding: 10px 0px;
     }
 
 
@@ -189,9 +184,6 @@ input.small-buttom, a.small-buttom-blue{
 
 @media(max-width : 568px){
 
-    .master-report-search{
-        margin: 0px 0px 24px;
-    }
 
     .master-report-column{
         width: 100%;

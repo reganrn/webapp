@@ -93,7 +93,7 @@ input, button, select {
 	background:#f7f7f7;
 	padding:5px;
 	border: 1px solid #d6d6d6;
-	width: 325px;
+	width: 250px;
 	display: none;
 	transition: all 100ms ease 0.05s;
 }
@@ -105,13 +105,13 @@ input, button, select {
 	width: 100%;
 }
 .ui-datepicker-header {
-	line-height: 30px;
+	line-height: 15px;
 	overflow: hidden;
-	margin:5px 0;
+	margin:2px 0;
 }
 .ui-datepicker-title {
 	text-align: center;
-	margin: 0 24px 0 24px;
+	margin: 0 15px 0 15px;
 }
 .ui-datepicker-title .ui-datepicker-month,.ui-datepicker-title  .ui-datepicker-year{
 	margin:0 5px;
@@ -121,15 +121,14 @@ input, button, select {
 	outline:none;
 	border-radius:0;
 	font-size:14px;
-	font-family: 'interstate';
 	width: 68px;
     height: 25px;
 }
 /* .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {font-family:interstateregular;color:red;} */
 .ui-datepicker-prev, .ui-datepicker-next {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 15px;
+	height: 15px;
 	text-align: center;
 	cursor: pointer;
 	background-image: url('/views/cpc/images/icons/arrow.png');
@@ -161,7 +160,7 @@ input, button, select {
 .ui-datepicker th {
 	text-transform: uppercase;
 	padding: 5px 0;
-	font-size:14px;
+	font-size:12px;
 }
 .ui-datepicker tbody td {
 	padding: 0;
@@ -177,12 +176,12 @@ input, button, select {
 .ui-datepicker td span, .ui-datepicker td a {
 	display: inline-block;
 	text-align: center;
-	width: 30px;
-	height: 30px;
-	margin:5px;
-	width:33px;
-	line-height:29px;
-	color: #7d80da;
+	width: 20px;
+	height: 20px;
+	line-height:19px;
+	color: #999999;
+	font-weight: 600;
+	font-size: 12px;
 }
 .ui-datepicker-calendar .ui-state-default {
 	border:1px solid #f7f7f7;

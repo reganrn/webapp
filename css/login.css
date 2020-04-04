@@ -1,41 +1,142 @@
+body {
+    overflow: hidden;
+}
 .master-crm-login {
-    background: #E8EBF7;
-    width: 100%;
+    background: #ffffff;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.master-crm-login-col {
+    flex: 0 1 50%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.master-crm-login-col:first-child {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 50px #f1f1f1;
+}
+
+.master-login-page h1 {
+    color: #f9c22e;
+    font-weight: 900;
+    font-size: 36px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.master-login-page h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #343840;
+    justify-content: center;
+}
+
+.master-login-page h2 svg {
+  margin-right: 10px;
 }
 
 .master-login-page {
-    width: 520px;
-    background: #ffffff;
-    padding: 42px 54px;
-    border-radius: 32px;
-    box-shadow: 1px 0px 50px #cccccc;
+    width: 350px;
 }
 
-.master-crm-login h2 {
-    text-align: center;
-    color: #555555;
-    font-size: 32px;
-    font-size: 800;
-    padding-bottom: 16px;
+.master-form-group{
+    margin: 24px 0px;
+    position: relative;
+    color: #333333;
 }
 
-.master-login-page .master-form-group input {
-    padding: 14px 16px;
+.icon-set svg {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 18px;
+    
+}
+
+.master-form-group input::placeholder{
+    color: #cccccc;
+    font-weight: 500;
+}
+
+.master-form-group input {
+    outline: none !important;
+    padding: 12px 14px 12px 40px;
+    width: 100%;
+    border: 1px solid #fdbdb5;
+    color: #333333;
+    font-weight: 600;
     font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 1px 0px 10px transparent;
+    transition: box-shadow .5s;
+    background: #ffffff;
 }
 
-@media (max-width: 567px){
+.master-cta {
+    background: #f15946;
+    padding: 8px 24px;
+    min-width: auto;
+    border-radius: 50px;
+    border: 0px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.text-center {    
+    display: flex;
+    justify-content:center;
+}
+
+.master-cta svg {
+    margin-left: 10px;
+    width: 20px;
+}
+
+@media(max-width : 767px){
+    .master-crm-login-col:first-child{
+        display: none;
+    }
+
+    .master-login-page h1{
+        background: #343840;
+        padding: 30px 0px;
+        margin: 0px 0px 50px;
+    }
+
+    .master-form-group{
+        margin: 20px auto;
+        width: 320px;
+    }
 
     .master-login-page{
         width: 100%;
-        padding: 32px 16px;
+        
     }
 
-    .master-crm-login {
-        padding: 0px 15px;
+    .master-crm-login-col{
+        align-items: baseline;
+    }
+
+    .master-crm-login-col{
+       flex: 0 1 100%; 
     }
 }

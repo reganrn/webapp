@@ -8,25 +8,36 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/form.css">
     <!-- https://coolors.co/ffae00-e8ebf7-e4572e-65655e-7d80da -->
 </head>
 <body>
     <div class="master-crm-login">
-        <div class="master-login-page">
-            <h2>login now</h2>
-            <div class="master-form-group">
-                <input type="text" placeholder="Email address">
+        <div class="master-crm-login-col after-login before-login">
+            <div class="master-crm-img">
+                <img src="images/intro-page.jpg">
             </div>
-            <div class="master-form-group">
-                <input type="text" placeholder="password">
-            </div>
-            <div class="master-form-group text-center">
-                <button class="master-cta">Login now</button>
+        </div>
+        <div class="master-crm-login-col">
+            <div class="master-login-page">
+                <h1>MONK ERP</h1>
+                <h2>Login now</h2>
+                <div class="master-form-group icon-set">
+                    <i data-feather="at-sign"></i><input type="text" placeholder="Email address">
+                </div>
+                <div class="master-form-group icon-set">
+                    <i data-feather="key"></i><input type="text" placeholder="password">
+                </div>
+                <div class="master-form-group text-center">
+                    <button class="master-cta">Login now <i data-feather="arrow-right"></i></button>
+                </div>
             </div>
         </div>
     </div>
-    <span class="iconify" data-icon="feather:unlock" data-inline="false"></span>
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/feather.js"></script>
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
